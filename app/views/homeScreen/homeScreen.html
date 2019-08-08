@@ -10,6 +10,31 @@
 	  </a>
 	</div>
   </nav> -->
+  <style>
+	 .flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  width: 100%;
+}
+/* .flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+} */
+  </style>
 <div class="navbar1">
 	
 	<div class="logo">
@@ -37,10 +62,10 @@
 	
 	
 </div>
-<div style=" background-image: url('img/Image/1.jpg');height: 74vh;">
+<div style=" background-image: url('img/Image/1.jpg');height: 80vh;" class="form-wizard">
 	
 		
-	<div class="col-md-3 " style="left: 30%;">
+	<!-- <div class="col-md-3 " style="left: 30%;">
 		<button ng-click="setTab(1)" heading="Scenario 1" class="dropbtn">Passport Service</button>
 						
 	</div>
@@ -55,7 +80,28 @@
 	<div class="col-md-3" style="right: 15%;">
 		<button ng-click="setTab(4)" heading="Scenario 4" class="dropbtn">Misclennous Service</button>
 				
-	</div>
+	</div> -->
+
+	<ul class="flex-container" vertical="true" style="padding-top: 14px;">                                                                        
+		<li ng-class="{ active: isSet(1) }">
+			<!-- <a data-target="#personal" data-toggle="tab" id="can_personal">Personal Details</a> -->
+			<a ng-click="setTab(1)" heading="Scenario 1" class="dropbtn flex-item" >Passport Service</a>
+		</li>
+		<li ng-class="{ active: isSet(2) }">
+			<!-- <a data-target="#contact" data-toggle="tab" id="can_contact">Contact Details</a> -->
+			<a ng-click="setTab(2)" heading="Scenario 2"class="dropbtn flex-item">Passport Service</a>
+		</li>
+		<li ng-class="{ active: isSet(3) }">
+			<a  ng-click="setTab(3)" heading="Scenario 3"class="dropbtn flex-item">Professional Details</a>
+		</li>
+		<li ng-class="{ active: isSet(4) }">
+			<a ng-click="setTab(4)" heading="Scenario 4"class="dropbtn flex-item">Oci/Pio Service</a>
+		</li>                                                        
+		<li ng-class="{ active: isSet(5) }">
+			<a ng-click="setTab(5)" heading="Scenario 5" class="dropbtn flex-item">Misclennous Service</a>
+		</li>                                                       
+	</ul>
+	
 		
 	<button type="button" style="position: relative; left: 46%; width: 96px; top: 10px;">Next</button>
 	
