@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!--<base href="/">-->
+        <link rel="stylesheet" href="scripts/vendor/bootstrap/css/bootstrap.min.css">
+        <link href="scripts/vendor/fonts/circular-std/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="scripts/libs/css/style.css">
+        <link rel="stylesheet" href="scripts/vendor/fonts/fontawesome/css/fontawesome-all.css">
+        <link rel="stylesheet" href="scripts/vendor/charts/chartist-bundle/chartist.css">
+        <link rel="stylesheet" href="scripts/vendor/charts/morris-bundle/morris.css">
+        <link rel="stylesheet" href="scripts/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="scripts/vendor/charts/c3charts/c3.css">
+        <link rel="stylesheet" href="scripts/vendor/fonts/flag-icon-css/flag-icon.min.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Berkshire+Swash|Pattaya" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <!---homepage Css---->
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="style/css/animate.css">
+            <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="style/css/icomoon.css">
+            <!-- Bootstrap  -->
+        <link rel="stylesheet" href="style/css/bootstrap.css">
+
+            <!-- Magnific Popup -->
+        <link rel="stylesheet" href="style/css/magnific-popup.css">
+
+            <!-- Flexslider  -->
+        <link rel="stylesheet" href="style/css/flexslider.css">
+
+            <!-- Owl Carousel -->
+        <link rel="stylesheet" href="style/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/css/owl.theme.default.min.css">
+            
+            <!-- Date Picker -->
+        <link rel="stylesheet" href="style/css/bootstrap-datepicker.css">
+            <!-- Flaticons  -->
+        <link rel="stylesheet" href="style/fonts/flaticon/font/flaticon.css">
+
+            <!-- Theme style  -->
+        <link rel="stylesheet" href="style/css/style.css">
+
+
+        
+        <link rel="stylesheet" type="text/css" href="style/dashboard.css">
+
+
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <!-- <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline-animations.css" /> -->
+
+        <!-- endbuild -->
+    </head>
+    <body ng-app="eCommApp" >
+    <!--[if lte IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+        <!-- <side-nav class="" ng-show="$root.sideBar"></side-nav> -->
+
+        <!-- <div class="preloader-background" ng-show="$root.spinner">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <header ng-if="$root.head"></header>
+        <bill-alert ng-if="$root.alertDue"></bill-alert> -->
+        <div>
+            <div ui-view>
+            </div>
+        </div>
+        <!-- <div class="modal" id="checkInternet" ng-include="'internetConnectionCheck.html'" modal dismissible="false"></div> -->
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- build:js(.) scripts/vendor.js -->
+
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <!-- <script src="bower_components/angular-animate/angular-animate.js"></script>   -->
+
+
+        <!-- <script src="bower_components/angular-route/angular-route.js"></script> -->
+
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!-- manually added becasue it not added by wire dep-problem in materialize versions -->
+
+
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/directive.js"></script>
+
+        <script src="views/dashboard/dashboard.js"></script>
+        <script src="views/homeScreen/homeScreen.js"></script>
+         <script src="scripts/libs/js/main-js.js"></script>
+        <!-- chart chartist js -->
+        <script src="scripts/vendor/charts/chartist-bundle/chartist.min.js"></script>
+        <!-- sparkline js -->
+        <script src="scripts/vendor/charts/sparkline/jquery.sparkline.js"></script>
+        <!-- morris js -->
+        <script src="scripts/vendor/charts/morris-bundle/raphael.min.js"></script>
+        <script src="scripts/vendor/charts/morris-bundle/morris.js"></script>
+        <!-- chart c3 js -->
+        <script src="scripts/vendor/charts/c3charts/c3.min.js"></script>
+        <script src="scripts/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+        <script src="scripts/vendor/charts/c3charts/C3chartjs.js"></script>
+        <script src="scripts/libs/js/dashboard-ecommerce.js"></script>
+    </body>
+</html>
