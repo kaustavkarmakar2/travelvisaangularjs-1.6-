@@ -17,6 +17,13 @@ function config($stateProvider, $urlRouterProvider) {
             controller: 'dashboardCtrl',
             title: 'Dashboard'
         })
+        .state('formpage', {
+            name: 'formpage',
+            url: "/formpage",
+            templateUrl: "views/form/form.html",
+            controller: 'formCtrl',
+            title: 'Form'
+        })
         .state('homepage', {
             name: 'homepage',
             url: "/",
