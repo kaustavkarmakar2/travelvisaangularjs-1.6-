@@ -82,28 +82,88 @@
 				
 	</div> -->
 
-	<ul class="flex-container" vertical="true" style="padding-top: 14px;">                                                                        
+	<ul class="flex-container tabs"  style="padding-top: 14px;">                                                                        
 		<li ng-class="{ active: isSet(1) }">
 			<!-- <a data-target="#personal" data-toggle="tab" id="can_personal">Personal Details</a> -->
 			<a ng-click="setTab(1)" heading="Scenario 1" class="dropbtn flex-item" >Passport Service</a>
 		</li>
 		<li ng-class="{ active: isSet(2) }">
 			<!-- <a data-target="#contact" data-toggle="tab" id="can_contact">Contact Details</a> -->
-			<a ng-click="setTab(2)" heading="Scenario 2"class="dropbtn flex-item">Passport Service</a>
+			<a ng-click="setTab(2)" heading="Scenario 2" class="dropbtn flex-item">Passport Service</a>
 		</li>
 		<li ng-class="{ active: isSet(3) }">
-			<a  ng-click="setTab(3)" heading="Scenario 3"class="dropbtn flex-item">Professional Details</a>
+			<a  ng-click="setTab(3)" heading="Scenario 3" class="dropbtn flex-item">Professional Details</a>
 		</li>
 		<li ng-class="{ active: isSet(4) }">
-			<a ng-click="setTab(4)" heading="Scenario 4"class="dropbtn flex-item">Oci/Pio Service</a>
+			<a ng-click="setTab(4)" heading="Scenario 4" class="dropbtn flex-item">Oci/Pio Service</a>
 		</li>                                                        
 		<li ng-class="{ active: isSet(5) }">
 			<a ng-click="setTab(5)" heading="Scenario 5" class="dropbtn flex-item">Misclennous Service</a>
 		</li>                                                       
 	</ul>
+	<!-- Tabs Content -->
+	<div class="tab-pane"  ng-show="isSet(1)" id='Scenario1'>
+
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="panel panel-default">
+						<div class="panel-body">
+
+							<form role="form" class="form-horizontal" role="form">
+
+								<h1>HEllo</h1>
+							</form>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+	</div>
+	<div class="tab-pane active"  ng-show="isSet(2)" id='Scenario2'>
+
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="panel panel-default">
+						<div class="panel-body">
+
+							<form role="form" class="form-horizontal" role="form">
+
+								<h1>HEllo2</h1>
+							</form>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+	</div>
+	<ul class="pager wizard">
+			<li class="previous first">
+				<a ng-click="setTab(1)">First</a>
+			</li>
+			<li class="previous">
+				<a ng-click='previous(i)'><i class="entypo-left-open"></i> Previous</a>
+			</li>
+
+			<li class="next last">
+				<a ng-click="setTab(5)">Last</a>
+			</li>
+			<li class="next">
+				<a ng-click='addProfileDetails(data,i)'>Next <i class="entypo-right-open"></i></a>
+			</li>
+			<!-- <li>
+			<a ng-click="addProfileDetails(data)"></a>Save<i class="entypo-right-open"></i>
+		   </li> -->
+		</ul>
+
 	
 		
-	<button type="button" style="position: relative; left: 46%; width: 96px; top: 10px;">Next</button>
+	
 	
 </div>
 
