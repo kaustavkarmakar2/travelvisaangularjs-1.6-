@@ -10,13 +10,7 @@
 function config($stateProvider, $urlRouterProvider) {
     //$qProvider.errorOnUnhandledRejections(false);
     $stateProvider
-        .state('dashboard', {
-            name: 'dashboard',
-            url: "/dashboard",
-            templateUrl: "views/dashboard/dashboard.html",
-            controller: 'dashboardCtrl',
-            title: 'Dashboard'
-        })
+        
         .state('signup', {
             name: 'signup',
             url: "/signup",
@@ -38,12 +32,12 @@ function config($stateProvider, $urlRouterProvider) {
             controller: 'formCtrl',
             title: 'Form'
         })
-        .state('dashboardformpage', {
-            name: 'dashboardformpage',
-            url: "/dashboardformpage",
-            templateUrl: "views/dashboardForm/form.html",
-            controller: 'dashboardFormCtrl',
-            title: 'DashboardForm'
+        .state('dashboard', {
+            name: 'dashboard',
+            url: "/dashboard",
+            templateUrl: "views/dashboard/dashboard.html",
+            controller: 'dashboardCtrl',
+            title: 'Dashboard'
         })
         .state('homepage', {
             name: 'homepage',

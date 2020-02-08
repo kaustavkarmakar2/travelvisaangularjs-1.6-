@@ -1,5 +1,6 @@
  <div style="color: black; position: absolute; left: 15%;"> 
         <h1>Enter Details</h1> 
+        <button ng-click="logout()">Logout</button>
      </div> 
      <div class="container" style="position: absolute; top: 18%; left: 14%;"> 
          <form action="" class="form-horizontal">
@@ -21,7 +22,7 @@
              <div class="form-group has-success"> 
                  <label class="control-label col-md-2" for="id1">Full Name</label> 
                  <div class="col-md-8"> 
-                     <input class="form-control" type="text" id="id1" placeholder="Please enter full name"> 
+                     <input class="form-control" type="text" id="id1" placeholder="Please enter full name" ng-model="full_name"> 
                  </div> 
              </div> 
              <div class="form-group has-success"> 
